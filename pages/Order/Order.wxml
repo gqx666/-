@@ -1,0 +1,25 @@
+<!--pages/Order/Order.wxml-->
+<!-- 顶部图片和文字 -->
+<view class="topp">
+  <view class="topp_one">
+    <image src="{{pro.photo_x}}"></image>
+  </view>
+  <view class="topp_two">
+    <view><text>{{pro.name}}</text></view>
+    <view><text>{{pro.price_yh}}</text></view>
+    <view><text>数量：{{num}}</text></view>
+  </view>
+</view>
+  <view class="addres" bindtap="address" >
+  <view>
+    <text>收货人:{{datare.name}}</text>
+    <text>地址：{{datare.address}}</text>
+  </view>
+  <image src="../images/you.png"></image>
+</view>
+<view class="zhifu">
+<text>应共支付：{{pro.price_yh * num}}</text>
+</view>
+<view class="but" bindtap="xiadan">
+线下支付
+</view>

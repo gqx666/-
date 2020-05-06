@@ -1,0 +1,59 @@
+<!--pages/jifen/jifem.wxml-->
+<view class="bigk">
+	<view class="back">
+		<image src="/../pages/images/xing.png">
+		</image>
+		<view class="box">
+			<view>
+				<text>
+            我的积分
+         </text>
+				<text>
+             {{jifen }}
+          </text>
+			</view>
+			<view>
+				<text>
+        待审核积分
+           </text>
+				<text>
+        {{shenhe}}
+              </text>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 姓名电话部分 -->
+<view class="kong">
+</view>
+<view class="xia">
+	<van-cell-group>
+		<van-field  placeholder="请输入收款人姓名" border="{{ false }}" bind:change="onChange" label="姓名" />
+	</van-cell-group>
+</view>
+<view class="xia">
+	<van-cell-group>
+		<van-field placeholder="请输入真实收款人电话" border="{{ false }}"  bind:change="onphone" label="收款人电话" />
+	</van-cell-group>
+</view>
+<view class="xia">
+	<van-cell-group>
+		<van-field  placeholder="请输入银行卡号或支付宝账号" border="{{ false }}" bind:change="onhao" label="提现账号" />
+	</van-cell-group>
+</view>
+<view class="xia">
+	<van-cell-group>
+		<van-field placeholder="提现金额大于100" border="{{ false }}" bind:change="onjine" label="提现金额" />
+	</van-cell-group>
+</view>
+<view class="xia">
+	<van-cell-group>
+		<van-field value="{{ jine * 0.9 }}"  placeholder="0.00" border="{{ false }}"  bind:change="ondaozhang" label="实际到账" disabled/>
+	</van-cell-group>
+</view>
+<view class="zhu">
+  <text>
+    注：提现每笔扣除10%的手续费
+  </text>
+</view>
+<button class="but" bindtap="submit">提交申请</button>

@@ -1,0 +1,41 @@
+<!--pages/address/address.wxml-->
+<view bindtap="and" class="dz">
+	<text>新增地址</text>
+</view>
+<!-- <view class="box"  wx:for="{{datare}}"  wx:key="index">
+	<view data-message="{{item}}" bindtap="baocun">
+		<view>姓名：{{item.name}}</view>
+		<view>电话：{{item.phone}}</view>
+		<view>地址：{{item.address}}</view>
+	</view>
+	
+	<view class="box_">
+		<view>
+		<text wx:if="{{item.is_default == 1}}">默认</text>
+		</view>
+	<view class="bianji" bindtap="bianji" class="box_two"  data-name='{{item.name}}'  data-phone='{{item.phone}}' data-address="{{item.address}}" id="{{item.id}}">
+	编辑
+	</view>
+	</view>
+</view> -->
+
+
+<view class="index" wx:for="{{datare}}"  wx:key="index">
+
+	<view class="index_one" data-message="{{item}}" bindtap="baocun">
+		<view>
+			<text class="text_one">{{item.name}}</text>
+			<text class="text_two">{{item.phone}}</text>
+		</view>
+		<view>
+			<view class="moren">
+				<text  wx:if="{{item.is_default == 1}}" >默认</text>
+			</view>
+			<text class="dizhi">{{item.address}}</text>
+		</view>
+	</view>
+
+	<view class="index_two">
+		<text class="bianji" bindtap="bianji" class="box_two"  data-name='{{item.name}}'  data-phone='{{item.phone}}' data-address="{{item.address}}" id="{{item.id}}">编辑</text>
+	</view>
+</view>

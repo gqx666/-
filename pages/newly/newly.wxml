@@ -1,0 +1,32 @@
+<!--pages/newly/newly.wxml-->
+<view class="cu-form-group">
+	<view class="title">收货人姓名</view>
+	<input bindinput="bindKeyInput1" placeholder="请填写姓名"></input>
+</view>
+<view class="cu-form-group">
+	<view class="title">收货人电话</view>
+	<input  bindinput="bindKeyInput2" placeholder="请填写电话"></input>
+</view>
+<view class="cu-form-group">
+	<view class="title">地址选择</view>
+	<picker mode="region" bindchange="RegionChange" value="{{region}}" custom-item="{{customItem}}">
+		<view class="picker">
+			{{region[0]}}，{{region[1]}}，{{region[2]}}
+		</view>
+	</picker>
+</view>
+<view class="cu-form-group">
+	<view class="title">详细地址</view>
+	<input  bindinput="bindKeyInput3" placeholder="请填详细地址"></input>
+</view>
+<view class="cu-form-group">
+	<view class="title">备注</view>
+	<input  bindinput="bindKeyInput4" placeholder="请填写备注"></input>
+</view>
+<view class="moren">
+<text>请选择是否成为默认地址</text>
+<van-switch checked="{{ checked }}" bind:change="onChange" />
+</view>
+<view bindtap="baocun" class="but">
+<text >保存地址</text>
+</view>

@@ -1,0 +1,18 @@
+<view class="cu-form-group">
+	<view class="title">收货人姓名</view>
+	<input  bindinput="bindKeyInput1"  value="{{name}}" placeholder="请填写姓名"></input>
+</view>
+<view class="cu-form-group">
+	<view class="title">收货人电话</view>
+	<input  bindinput="bindKeyInput2" value="{{phone}}" placeholder="请填写电话"></input>
+</view>
+<view class="cu-form-group">
+	<view class="title">请填写地址</view>
+	<input  bindinput="bindKeyInput3"  value="{{address}}"  placeholder="请填写地址"></input>
+</view>
+<view class="moren">
+<text>请选择是否成为默认地址</text>
+<van-switch checked="{{ checked }}" bind:change="onChange" />
+</view>
+<view class="baocn" bindtap="baocun">保存</view>
+<view bindtap="shanchu" class="shanchu">删除</view>

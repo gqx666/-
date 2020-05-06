@@ -1,0 +1,37 @@
+<!--index.wxml-->
+<!-- 顶部 -->
+<!-- 轮播 -->
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+	<swiper-item wx:for="{{swiperList}}" wx:key="index">
+		<image src="{{item.photo}}" mode="aspectFill"></image>
+	</swiper-item>
+</swiper>
+<!-- 商品 -->
+<view class="box" >
+	<view class="box_one" wx:for="{{prolist}}" id="{{item.id}}" bindtap="jump" wx:key="index">
+		<image src="{{item.photo_x}}"></image>
+		<text class="text_box">
+     "{{item.name}}"
+      </text>
+		<view class="box_text">
+			<view>
+				<text>
+         {{item.price_yh}}
+      </text>
+				<text class="yuanjia">
+          {{item.price}}
+      </text>
+			</view>
+		</view>
+		<view class="box_node">
+			<view>
+				<text>新品推荐</text>
+				<text>销量：{{item.shiyong}}</text>
+			</view>
+		</view>
+	</view>
+</view>
+<!-- 底部按钮 -->
+<view class="button">
+<button>点击查看更多</button>
+</view>

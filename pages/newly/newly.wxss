@@ -1,0 +1,20 @@
+/* pages/newly/newly.wxss */
+.but{
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 10%;
+  height: 70rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #1196D9;
+  color: #fff;
+  border-radius: 15rpx ;
+}
+.moren{
+  width: 100%;
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}

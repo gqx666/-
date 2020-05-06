@@ -1,0 +1,40 @@
+
+<view class="box_top" >
+	<view class="box_top_img">
+		<image src="{{photo}}"></image>
+	</view>
+	<view class="boox_text">
+		<text>
+      {{name}}
+    </text>
+	</view>
+</view>
+<!-- 我的图标 -->
+<view class="tb_box">
+	<view bindtap="shouji">
+    <view class="img_box"><image src="http://i2.tiimg.com/717251/54e0b3315f701b28.png"></image></view>
+    <view><text>绑定手机</text></view>
+	</view>
+	<view bindtap="jifen">
+     <view class="img_box"><image src="http://i2.tiimg.com/717251/77c4138a62ffd347.png"></image></view>
+    <view><text>积分兑换</text></view>
+	</view>
+	<view>
+     <view class="img_box"><image src="http://i2.tiimg.com/717251/360fa3c50154ec33.png"></image></view>
+    <view><text>我的订单</text></view>
+	</view>
+</view>
+<view class="tb_box">
+	<view bindtap="cal">
+    <view class="img_box"><image src="http://i2.tiimg.com/717251/360fa3c50154ec33.png"></image></view>
+    <view><text>联系我们</text></view>
+	</view>
+	<view bindtap="map">
+     <view class="img_box"><image src="http://i2.tiimg.com/717251/65b41e5936537632.png"></image></view>
+    <view ><text>导航</text></view>
+	</view>
+	<view>
+     <view bindtap="mail" class="img_box"><image src="http://i2.tiimg.com/717251/1e6333273c8d5fdd.png"></image></view>
+    <view><text>存通讯录</text></view>
+	</view>
+</view>

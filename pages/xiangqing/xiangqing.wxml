@@ -1,0 +1,65 @@
+<!--pages/xiangqing/xiangqing.wxml-->
+<swiper class="screen-swiper {{DotStyle?'square-dot':'round-dot'}}" indicator-dots="true" circular="true" autoplay="true" interval="5000" duration="500">
+	<swiper-item wx:for="{{pro.img_arr}}" wx:key="index">
+		<image src="{{item}}" mode="aspectFill"></image>
+	</swiper-item>
+</swiper>
+<view class="name_view">
+	<text class="name">{{pro.intro}}</text>
+</view>
+<view class="money">
+	<view class="money_text">
+		<text class="detailsPrice">￥：{{pro.price_yh}}</text>
+		<text class="detailsShi">库存：{{pro.num}}</text>
+	</view>
+</view>
+<van-tabs border="{{quxiao}}" active="{{ active }}" bind:change="onChange">
+	<van-tab title="图文详情">
+		<rich-text nodes="{{pro.content}}"></rich-text>
+	</van-tab>
+	<van-tab title="产品参数">
+		<view class="name_one">
+			<text class="name_two">商品名称：{{pro.intro}}</text>
+		</view>
+		<view class="name_one">
+			<text class="name_two">商品编号：4</text>
+		</view>
+		<view class="name_one">
+			<text class="name_two">分类：积分</text>
+		</view>
+	</van-tab>
+</van-tabs>
+<view class="kong"></view>
+<!-- <view class="but">
+立即购买
+</view> -->
+<view class="but cu-btn bg-green shadow" bindtap="showModal" data-target="bottomModal">立即购买</view>
+<view class="cu-modal bottom-modal {{modalName=='bottomModal'?'show':''}}">
+	<view class="cu-dialog">
+    
+		<view class="quxiao action text-blue" bindtap="hideModal">取消</view>
+		<view class="big_box">
+			<view class="box">
+				<view class="imge">
+					<image src="{{pro.photo_x}}"></image>
+				</view>
+			</view>
+			<view class="box_two">
+				<view class="box_text">
+					<text class="detailsName">{{pro.name}}</text>
+					<view class="box_text">
+						<text class="detailsPrice">￥：{{pro.price_yh}}</text>
+					</view>
+          <view>
+            <text class="detailsShi">库存：{{pro.shiyong}}</text>
+          </view>
+				</view>
+			</view>
+		</view>
+    <view class="xia">
+    <text>购买数量</text>
+    <van-stepper value="{{num}}" bind:change="onChange" />
+    </view>
+    <view class="gomai" bindtap="purchase">立即购买</view>
+	</view>
+</view>

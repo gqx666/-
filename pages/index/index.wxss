@@ -1,0 +1,65 @@
+/**index.wxss**/
+
+.box {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.box_one {
+  width: 48%;
+  margin: 1%;
+  border: 1px solid #ccc;
+  height: 550rpx;
+}
+
+
+.box_one image {
+  width: 90%;
+  height: 300rpx;
+  margin: 5%;
+}
+
+.box_text {
+  width: 90%;
+  margin-left: 5%;
+}
+
+.box_text text {
+  color: red;
+  font-size: 36rpx;
+  line-height: 20rpx;
+}
+
+.box_text view {
+  display: flex;
+  justify-content: space-between;
+}
+
+.box_node view {
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  width: 90%;
+  margin-top: 5%;
+}
+
+.text_box {
+  margin-left: 5%;
+  width: 90%;
+  display: block;
+  font-size: 3.5vw;
+  margin-top: -10%;
+  /* 限制字数 */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+
+.button button {
+  background: #fff;
+  border: 1px solid #000000;
+  margin-top: 10%;
+}

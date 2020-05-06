@@ -1,0 +1,5 @@
+<!--pages/photo/photo.wxml-->
+<view class="box">
+<image src="/pages/images/weixin_logo.png"></image>
+</view>
+<button class="but" open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" bindtap="fanhui" >获取手机号</button>

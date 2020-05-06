@@ -1,0 +1,38 @@
+<!--pages/login/login.wxml-->
+<!-- 顶部  -->
+<!-- Tab标签页 -->
+<van-tabs active="{{ active }}">
+	<van-tab title="一级">
+		<!-- <view class="text_">
+      <image src="../../pages/images/junior.png"></image>
+			<view>没有一级用户</view>
+			<view>一级用户数量：0</view>
+		</view> -->
+	<view class="box" wx:for="{{index}}">
+		<view>
+			<image src="{{item.photo}}"></image>
+		</view>
+		<view>
+			<text>用户名：{{item.name}}</text>
+			<text>手机号：{{item.tel}}</text>
+		</view>
+	</view>
+
+	</van-tab>
+	<van-tab title="二级">
+  	<!-- <view class="text_">
+      <image src="../../pages/images/junior.png"></image>
+				<view>没有二级用户</view>
+				<view>二级用户数量：0</view>
+		</view> -->
+			<view class="box" wx:for="{{indexx}}">
+		<view>
+			<image src="{{item.photo}}"></image>
+		</view>
+		<view>
+			<text>用户名：{{item.name}}</text>
+			<text>手机号：{{item.tel}}</text>
+		</view>
+	</view>
+		</van-tab>
+</van-tabs>

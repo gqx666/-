@@ -1,0 +1,14 @@
+/* pages/photo/photo.wxss */
+.box{
+  text-align: center;
+}
+.box image{
+  width: 300rpx;
+  height: 300rpx;
+  margin-top: 25%;
+}
+.but{
+  background-color: #1196D9;
+  color: #fff;
+  margin-top: 25%;
+}

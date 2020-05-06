@@ -1,0 +1,53 @@
+/* pages/Order/Order.wxss */
+.topp{
+  display: flex;
+  justify-content: space-around;
+  display: flex;
+  padding: 20rpx;
+}
+.topp_one{
+  width: 40%
+}
+.topp_one image{
+  width: 250rpx;
+  height: 250rpx;
+}
+.topp_two{
+  width: 50%;
+  margin-top: 3%;
+}
+.topp_two text{
+  line-height: 25px;
+}
+.addres{
+  display: flex;
+  justify-content: space-between;
+  padding: 20rpx;
+  align-items: center;
+  color: #999;
+}
+.addres image{
+  width: 100rpx;
+  height: 100rpx;
+}
+.addres view text {
+  display: block;
+}
+.zhifu{
+  text-align: center;
+}
+.zhifu text{
+  font-size: 18px;
+}
+.but{
+  width: 90%;
+  height: 40px;
+  background-color: #1196D9;
+  margin-left: 5%;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+  color: #fff;
+  border-radius: 15rpx;
+}

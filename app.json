@@ -1,0 +1,70 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/three/three",
+    "pages/login/login",
+    "pages/my/my",
+    "pages/xiangqing/xiangqing",
+    "pages/Order/Order",
+    "pages/address/address",
+    "pages/newly/newly",
+    "pages/denglu/denglu",
+    "pages/photo/photo",
+    "pages/bianji/bianji",
+    "pages/jifen/jifem"
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#1196D9",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#1296DB",
+    "borderStyle": "white",
+    "list": [
+      {
+        "selectedIconPath": "pages/images/home.png",
+        "iconPath": "pages/images/home_1.png",
+        "pagePath": "pages/index/index",
+        "text": "首页"
+      },
+      {
+        "selectedIconPath": "pages/images/team.png",
+        "iconPath": "pages/images/team_1.png",
+        "pagePath": "pages/login/login",
+        "text": "我的团队"
+      },
+      {
+        "selectedIconPath": "pages/images/friend.png",
+        "iconPath": "pages/images/friend_1.png",
+        "pagePath": "pages/three/three",
+        "text": "邀请好友"
+      },
+      {
+        "selectedIconPath": "pages/images/mine.png",
+        "iconPath": "pages/images/mine_1.png",
+        "pagePath": "pages/my/my",
+        "text": "我的"
+      }
+    ]
+  },
+  "usingComponents": {
+    "van-button": "miniprogram/dist/button/index",
+    "van-nav-bar": "miniprogram/dist/nav-bar/index",
+    "van-tab": "miniprogram/dist/tab/index",
+    "van-tabs": "miniprogram/dist/tabs/index",
+    "van-action-sheet": "miniprogram/dist/action-sheet/index",
+    "van-stepper": "miniprogram/dist/stepper/index",
+    "van-switch": "miniprogram/dist/switch/index",
+    "van-field": "miniprogram/dist/field/index"
+  }
+}

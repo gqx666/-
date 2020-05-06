@@ -1,0 +1,11 @@
+
+<!-- <image class="img" src="../../pages/images/friends.png"></image> -->
+
+<view class="back"> 
+  <image src="/pages/images/11_副本.jpg">
+  </image>
+</view>
+
+<view class="img">
+  <image class="" src="{{ImageBase64Str}}"></image>
+</view>
